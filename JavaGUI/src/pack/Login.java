@@ -70,7 +70,7 @@ public class Login extends JFrame {
 		Password.setBounds(10, 90, 105, 36);
 		panel.add(Password);
 		
-		JLabel lblTheBoyzApp = new JLabel("The Boyz App");
+		JLabel lblTheBoyzApp = new JLabel("Social Tracker");
 		lblTheBoyzApp.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblTheBoyzApp.setBounds(112, 10, 225, 24);
 		panel.add(lblTheBoyzApp);
@@ -96,16 +96,18 @@ public class Login extends JFrame {
 	// method that attempts to login using the parameters passed by the user.
 	private void loginMessage(String name, String password) {
 		System.out.println("About to login");
+		/*
 		if (name.equals("George") && password.equals(correctPassword)) {
 		System.out.println("Logging in as: "+name);
+		*/
 		Frame1 frame1 = new Frame1();
 		frame1.newWindow();
 		System.out.println("Opening frame");
 		dispose();
-		}
+		/*}
 		else {
 			System.out.println("Wrong password bitch");
-		}
+		}*/
 	}
 
 }
